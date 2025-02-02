@@ -12,21 +12,17 @@
     "test": "jest",
     "prepare": "husky"
   },
-
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
+    }
   },
-
   "lint-staged": {
     "src/**/*.{ts,tsx}": [
       "eslint --fix .",
       "prettier --write . --ignore-path .gitignore"
     ]
   },
-
-
-
   "keywords": [],
   "author": "",
   "license": "ISC",
